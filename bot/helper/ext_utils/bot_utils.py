@@ -370,6 +370,10 @@ def is_unified_link(url: str):
     else:
         return False
 
+def is_filepress_link(url: str):
+    url = re_match(r'https?://(filepress|filebee)\.\S+', url)
+    return bool(url)
+
 def is_udrive_link(url: str):
     if 'drivehub.ws' in url:
         return 'drivehub.ws' in url

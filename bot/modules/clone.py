@@ -138,7 +138,8 @@ def _clone(message, bot):
     is_gdtot = is_gdtot_link(link)
     is_unified = is_unified_link(link)
     is_udrive = is_udrive_link(link)
-    if (is_gdtot or is_unified or is_udrive):
+    is_filepress = is_filepress_link(link)
+    if (is_gdtot or is_unified or is_udrive or is_filepress):
         try:
             msg = sendMessage(f"Processing: <code>{link}</code>", bot, message)
             LOGGER.info(f"Processing: {link}")
@@ -148,6 +149,8 @@ def _clone(message, bot):
                 link = gdtot(link)
             if is_udrive:
                 link = udrive(link)
+            if is_filepress:
+                link = filepress(link)
             LOGGER.info(f"Processing GdToT: {link}")
             deleteMessage(bot, msg)
         except DirectDownloadLinkException as e:
