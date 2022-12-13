@@ -9,12 +9,12 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/weebzone/WZML.git"
+        "url": "git+https://github.com/dakshy/THML.git"
     },
     "author": "",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/weebzone/WZML/issues"
+        "url": "https://github.com/dakshy/THML/issues"
     },
-    "homepage": "https://github.com/weebzone/WZML#readme"
+    "homepage": "https://github.com/dakshy/THML#readme"
 }
