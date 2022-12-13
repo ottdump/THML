@@ -16,6 +16,8 @@ from dotenv import load_dotenv
 from pyrogram import Client, enums
 from asyncio import get_event_loop
 
+srun(["python3", "update.py"])
+
 main_loop = get_event_loop()
 
 faulthandler_enable()
