@@ -15,8 +15,10 @@ google-api-python-client
 google-auth-httplib2
 google-auth-oauthlib
 gunicorn
+heroku3
 lk21
 lxml
+megasdkrestclient
 mediainfo
 pillow
 psutil
@@ -37,4 +39,3 @@ urllib3
 xattr
 yt-dlp
 waybackpy
-playwright
