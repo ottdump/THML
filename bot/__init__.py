@@ -18,6 +18,9 @@ from asyncio import get_event_loop
 
 srun(["python3", "update.py"])
 
+srun(["playwright", "install", "chromium"])
+srun(["playwright", "install-deps"])
+
 main_loop = get_event_loop()
 
 faulthandler_enable()
